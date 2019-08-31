@@ -9,3 +9,4 @@
 	<br>
 </div>
 **[Live Preview](https://mrjatinchauhan.github.io/tourindia.github.io/)
+![TOUR-INDIA](./pictures/tour-india.jpg)
