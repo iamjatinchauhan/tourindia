@@ -3,8 +3,8 @@
 	<p>
 		<b>Tourism Website Welcome Page Prototype which shows travel destinations across various part of Country</b>
 	</p>
-	<br>
+	<hr>
 	<br>
 	<br>
 </div>
----
+
