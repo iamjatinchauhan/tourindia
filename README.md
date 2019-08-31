@@ -1,8 +1,8 @@
 <div align="center">
 	<img src="./pictures/tour-india.jpg">
-	<h1>yup</h1>
+	<h1>Tourism Website Welcome Page Prototype which shows travel destinations across various part of Country</h1>
 	<p>
-		<b>Tourism Website Welcome Page Prototype which shows travel destinations across various part of Country</b>
+		<b></b>
 	</p>
 	<hr>
 	<br>
