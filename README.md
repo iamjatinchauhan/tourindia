@@ -11,8 +11,8 @@
 
 ## Preview
 
-
-[![Tour India Preview](./pictures/parts-glimpse.png)](https://mrjatinchauhan.github.io/tourindia.github.io/)
+[![Tour India Preview](./pictures/welcoming-page.png)](https://mrjatinchauhan.github.io/tourindia.github.io/)
+[![Glimpse Preview](./pictures/parts-glimpse.png)](https://mrjatinchauhan.github.io/tourindia.github.io/)
 
 
 ## Wireframe
