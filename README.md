@@ -2,7 +2,7 @@
 	<a href="https://mrjatinchauhan.github.io/tourindia.github.io/"><img src="./pictures/tour-india.jpg"></a>
 	<h4>Tourism Website Welcome Page Prototype which shows travel destinations across various part of Country</h4>
 	<br>
-	<hr>
+	<hr size="1">
 </div>
 
 [Tour India](https://mrjatinchauhan.github.io/tourindia.github.io/) is a Prototype one page Tourism portfolio made using [Bootstrap](http://getbootstrap.com/). This theme features several content sections, a responsive portfolio grid (tourist-places), window modals for each portfolio item, and a (NewsLetter) PHP contact form.
