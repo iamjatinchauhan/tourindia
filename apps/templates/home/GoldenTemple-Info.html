@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  {% load static %}
 
   <title>Tour India</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'Pages-inside/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/goldentemple.css" rel="stylesheet">
+  <link href="{% static 'Pages-inside/css/goldentemple.css' %}" rel="stylesheet">
 
 </head>
 
@@ -62,7 +63,7 @@
     <div class="row">
 
       <div class="col-md-8">
-        <img class="img-fluid" src="./img/Harmandir-Sahib-Amritsar-India-Punjab.jpg" alt="">
+        <img class="img-fluid" src="{% static 'Pages-inside/img/Harmandir-Sahib-Amritsar-India-Punjab.jpg' %}" alt="">
       </div>
 
       <div class="col-md-4">
@@ -88,25 +89,25 @@ The temple is built around a man-made pool (sarovar) that was completed by Guru 
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="./img/The-Golden-Temple-India8.jpg" alt="">
+          <img class="img-fluid" src="{% static 'Pages-inside/img/The-Golden-Temple-India8.jpg' %}" alt="">
         </a>
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="./img/597529822Amritsar_Main.jpg" alt="">
+          <img class="img-fluid" src="{% static 'Pages-inside/img/597529822Amritsar_Main.jpg' %}" alt="">
         </a>
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="./img/imb-photos-warrior-medium.jpg" alt="">
+          <img class="img-fluid" src="{% static 'Pages-inside/img/imb-photos-warrior-medium.jpg' %}" alt="">
         </a>
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#">
-          <img class="img-fluid" src="./img/photo1.jpg" alt="">
+          <img class="img-fluid" src="{% static 'Pages-inside/img/photo1.jpg' %}" alt="">
         </a>
       </div>
 
@@ -125,8 +126,8 @@ The temple is built around a man-made pool (sarovar) that was completed by Guru 
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'Pages-inside/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'Pages-inside/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 
