@@ -1,0 +1,554 @@
+.protfolio-wrap{
+	margin:50px;
+}
+
+@media (max-width: 767px) {
+  .protfolio-wrap {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .protfolio-wrap {
+    margin: 10px;
+  }
+}
+
+.section-gap {
+	padding: 120px 0;
+}
+.section-title {
+	padding-bottom: 30px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		@include media-breakpoint-down (md) {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.primary-btn {
+	background-color:$primary-color;
+	line-height: 36px;
+	padding-left: 30px;
+	padding-right: 60px;
+	border-radius: 25px;
+	border:none;
+	color: $white;
+	display: inline-block;
+	font-weight: 500;
+	position: relative;
+	@include transition();
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	&:focus {
+		outline: none;
+	}
+	span {
+		color: $white;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-60%);
+		right: 30px;
+		@include transition();
+	}
+	&:hover {
+		color: $white;
+		span {
+			color: $white;
+			right: 20px;
+		}
+	}
+	&.white {
+		border: 1px solid $white;
+		color: $white;
+		span {
+			color: $white;
+		}
+		&:hover {
+			background: $white;
+			color: $primary-color;
+			span {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+
+//--------- Start Banner Area -------------//
+
+.banner-area {
+	margin-top:-56px;
+	border-radius:10px;
+	background:url(../img/header-bg.jpg) center;
+	background-size:cover;
+	.fullscreen {
+		@include media-breakpoint-down (lg) {
+			height: 800px !important;
+		}
+	}
+
+	.overlay-bg{
+		border-radius:10px;
+		background-color:rgba(#04091e,.5);
+	}
+
+}
+.banner-content {
+	text-align:center;
+	h1{
+		color:$white;
+		font-size: 72px;
+		font-weight: 700;
+		line-height: 1em;
+		margin-top:20px;
+		margin-bottom:40px;
+		span{
+			font-weight:700;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 36px;
+		}
+		br {
+			@include media-breakpoint-down (md) {
+				display: none;
+			}
+		}
+
+		@include media-breakpoint-down (lg) {
+			font-size:45px;
+		}	
+
+		@media ( max-width:414px ) {
+			font-size:40px;
+		}
+	}
+	h5{
+		color:$primary-color;
+		font-weight:300;
+		letter-spacing: 3px;
+		font-size:12px;
+	}
+	@media(max-width:1280px){
+		br{
+			display:none;
+		}
+	}
+}
+
+.primary-btn{
+	background:$primary-color;
+	border:1px solid transparent;
+	color:$white;
+	padding-left: 40px;
+	padding-right: 40px;	
+	border-radius:50px;
+	&:hover{
+		border:1px solid $white;
+		background:transparent;
+		color:$white;
+	}
+}
+
+
+//--------- End Banner Area -------------//
+
+
+//--------- Start portfolio Area -------------//
+
+.portfolio-area{
+
+	.primary-btn{
+		color:$white;
+		background-color:$primary-color;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+.portfolio-area .filters {
+  text-align: center;
+  margin-top: 50px;
+}
+.portfolio-area .filters ul {
+  padding: 0;
+}
+.portfolio-area .filters ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+  text-transform:uppercase;
+  color:$black;  
+  font-weight:500;
+  @media(max-width:736px){
+    padding: 6px 6px;
+  }
+
+}
+
+.portfolio-area .filters ul li:after {
+  content: "";
+  display: block;
+  width: calc(0% - 60px);
+  position: absolute;
+  height: 2px;
+  background: #333;
+  transition: width 350ms ease-out;
+}
+.portfolio-area .filters ul li:hover:after {
+  width: calc(100% - 60px);
+  transition: width 350ms ease-out;
+}
+.portfolio-area .filters ul li.active {
+  color:$primary-color;
+}
+.portfolio-area .filters-content {
+  margin-top: 50px;
+}
+.portfolio-area .filters-content .show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 350ms;
+}
+.portfolio-area .filters-content .hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 350ms;
+}
+.portfolio-area .filters-content .item {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.portfolio-area .filters-content .item img{
+	border-radius:10px;
+}
+
+.portfolio-area .filters-content .item .p-inner {
+  padding: 20px 0px;
+}
+.portfolio-area .filters-content .item .p-inner h5 {
+  font-size: 15px;
+}
+.portfolio-area .filters-content .item .p-inner .cat {
+  font-size: 13px;
+}
+.portfolio-area .filters-content .item img {
+  width: 100%;
+}
+
+
+
+//--------- End portfolio Area -------------//
+
+
+//--------- Start service Area -------------//
+
+.service-area{
+	background:url(../img/service-bg.jpg) center;
+	background-size:cover;
+	border-radius:10px;
+	.overlay-bg{
+		border-radius:10px;
+		background:rgba(#04091e,.8);
+	}
+}
+
+.services-area{
+	margin-top:-120px;	
+}
+
+
+.single-service{
+	border-radius:10px;
+	text-align:center;
+	padding:30px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
+	h4{
+		padding:20px 0px;
+	}
+	@media(max-width:960px){
+		margin-bottom:30px;
+	}
+}
+
+//--------- End service Area -------------//
+
+
+//--------- Start service Area -------------//
+
+.single-review{
+	h4{
+		color:$black;
+	}
+	.star{
+		.checked {
+		    color: orange;
+		}
+	}
+
+}
+
+
+//--------- End service Area -------------//
+
+//--------- start review Area -------------//
+
+.single-review{
+	margin-bottom:40px;
+	img{
+		margin-bottom:15px;
+	}	
+	.title{
+		padding:20px 0;
+	}
+	.star{
+		margin-left: 20px;
+	}
+}
+
+
+//--------- end review Area -------------//
+
+
+//--------- start footer Area -------------//
+
+	.footer-area{
+		padding-top:100px;
+		background-color:#04091e;
+	}
+	h6{
+		color:#fff;
+		margin-bottom:25px;
+		font-size:18px;
+		font-weight:600;
+	}
+	
+	.copy-right-text{
+		i,a{
+			color:$primary-color;
+		}
+	}
+
+
+
+
+	.footer-social{
+		a{
+			padding-right:25px;
+			@include transition();
+			&:hover{
+			
+				i{
+						color:$primary-color;
+				}
+			}
+		}
+		
+		i{
+			color:#cccccc;
+			@include transition();
+
+		}
+		@include media-breakpoint-down(md) {
+			text-align:left;
+		}
+	}
+
+
+	.single-footer-widget {
+		input {
+			border: none;
+			width:80%!important;
+			font-weight: 300;
+			background: #191919;
+			color:#777;
+			padding-left:20px;
+			border-radius: 0;
+			font-size: 14px;
+			padding: 10px 18px;
+			&:focus {
+    			background-color: #191919;
+			}
+		}
+
+		.bb-btn{
+			color:$primary-color;
+			color:#fff;
+			font-weight:300;
+			border-radius:0;
+			z-index:9999;
+			cursor:pointer;
+		}
+
+		.info {
+				position:absolute;
+				margin-top:20%;
+				color: #fff;
+				font-size: 12px;
+				&.valid {
+					color: green;
+				}
+				&.error {
+					color: red;
+				}
+		}
+
+		.click-btn{
+			background-color:$primary-color;
+			color: #fff;
+			border-radius: 0;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			padding: 8px 12px;
+			border:0;
+		}
+
+		::-moz-selection { /* Code for Firefox */
+	  	 	 background-color: #191919!important;
+	  		 color: $text-color;
+		}
+		::selection {
+		    background-color: #191919!important;
+		    color: $text-color;
+		}
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		    color:    $text-color;
+		    font-weight: 300;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+		::-ms-input-placeholder { /* Microsoft Edge */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom:30px;
+		}
+	}
+		
+
+
+		@media(max-width:800px){
+			.social-widget{
+				margin-top:30px;
+			}			
+		}
+		
+
+	.footer-text{
+		padding-top:20px;
+		a,i{
+			color:$primary-color;
+		}
+	}
+
+//--------- end footer Area -------------//
+
+//----------- Start Generic Page -------------//
+
+.whole-wrap{
+	background-color:$white;
+}
+
+
+.generic-banner {
+	margin-top:-56px;
+	background-color:#04091e;
+	text-align:center;
+	.height {
+		height: 600px;
+		@include media-breakpoint-down (sm) {
+			height: 400px;
+		}
+	}
+	.generic-banner-content {
+		h2 {
+			line-height: 1.2em;
+			margin-bottom: 20px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+		p {
+			text-align:center;
+			font-size: 16px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.generic-content{
+	h1{
+		font-weight:600;	
+	}
+}
+
+
+.about-generic-area {
+	background: $white;
+	.border-top-generic {
+
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.white-bg {
+	background: $white;
+}
+.section-top-border {
+	padding: 70px 0;
+	border-top: 1px dotted #eee;
+}
+.switch-wrap {
+	margin-bottom: 10px;
+	p {
+		margin: 0;
+	}
+}
+//----------- End Generic Page -------------//
