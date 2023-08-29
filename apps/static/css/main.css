@@ -1883,7 +1883,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .is-sticky .default-header {
-  background-color: rgba(4, 9, 30, 0.8);
+  background-color: rgba( 138,185,45, 0.8);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1891,7 +1891,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .collapse.show {
-  background-color: rgba(4, 9, 30, 0.8);
+  background-color: rgba( 138,185,45, 0.8);
   padding: 0px 12px;
 }
 

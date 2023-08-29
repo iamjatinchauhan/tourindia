@@ -68,7 +68,9 @@
 </head>
 <body>
 <div class="signup-form">
+
     <form action="" method="post">
+        {% csrf_token %}
 		<h2>Sign Up</h2>
 		<p>It's free and only takes a minute.</p>
 		<hr>
